@@ -1,0 +1,117 @@
+.home .banner {
+    display: block;
+}
+
+.home {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.home section .section-title {
+    margin: 20px 0;
+}
+
+.home .card {
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.home .card .card-content {
+    border-top: 1px solid var(--light_grey);
+    position: relative;
+    padding: 15px;
+
+}
+
+.home .card .card-content .icon-truck {
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    width: fit-content;
+    padding: 5px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: #FFF;
+}
+
+.home .card .card-content .icon-truck i {
+    color: var(--green);
+    font-size: 16px;
+}
+
+.home .card .card-content .product-info {
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 5px;
+}
+
+.home .card .card-content .product-info p:nth-child(1){
+    flex-grow: 0.3;
+}
+
+.home .card .card-content .product-info p:nth-child(2){
+    color: var(--green);
+    font-size: 14px;
+    flex-grow: 0.7;
+}
+
+.home .card .card-content .product-name {
+    display: none;
+    color: var(--dark_grey);
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+
+@media (min-width: 361px) {
+
+    .home {
+        width: 100%;
+    }
+
+    .home .conteinCard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .home .conteinCard .section-title {
+        width: 100vw;
+        margin-left: 5vw;
+    }
+
+    .home .conteinCard .card {
+        width: 40vw;
+    }
+
+    .home .conteinCard .card:hover {
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+
+    .home .conteinCard .card:hover .card-content .product-name {
+        display: block;
+    }
+
+    .home .card .card-content .icon-truck {
+        transition: transform 3s ease-in-out;
+    }
+    
+    .home .card .card-content .icon-truck:hover {
+        transform: rotateZ(720deg);
+        transition: transform 6s ease-in-out;
+    }
+
+}
+
+@media (min-width: 769px) {
+    
+    .home .conteinCard {
+        justify-content: space-evenly;
+    }
+
+    .home .conteinCard .card {
+        width: 20vw;
+        
+    }
+
+}

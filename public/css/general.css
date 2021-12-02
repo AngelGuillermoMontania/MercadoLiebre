@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font_roboto);
+    background-color: var(--light_grey);
+}
+
+li {
+    list-style: none;
+}

@@ -1,0 +1,137 @@
+header {
+    background-color: var(--yellow);
+    font-size: var(--paragraph);
+    padding-bottom: 5px;
+}
+
+header nav {
+    display: none;
+}
+
+header .burger-menu{
+    color: white;
+    background-color: var(--light_blue);
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto 0;
+}
+
+header .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .row1 .logo {
+    padding-top: 15px;
+    width: 40vw;
+    margin-bottom: 10px;
+}
+
+header .row1 .search-bar {
+    width: 40vw;
+    height: 30px;
+    display: flex;
+}
+
+header .row1 .search-bar form {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+header .row1 .search-bar form input {
+    width: 90%;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+header .row1 .quota {
+    text-align: center;
+    margin: 10px 0 10px;
+}
+
+
+@media (min-width: 361px) {
+
+    header nav {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        font-size: 9px;
+    }
+   
+    header .burger-menu {
+        display: none;
+    }
+
+    header .row1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    header .row1 .logo {
+        width: 30vw;
+    }
+    
+    header .row1 .search-bar {
+        width: 30vw;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    header .row1 .search-bar input {
+        width: 25vw;
+    }
+
+    header .row1 .quota {
+        width: 30vw;
+        text-align: center;
+        margin: 0;
+    }
+
+    header nav ul {
+        display: flex;
+    }
+
+    header nav ul li{
+        margin: 0 2px 0 2px;
+    }
+}
+
+@media (min-width: 769px) {
+    header nav {
+        font-size: 12px;
+    }
+
+    header .row1 {
+        margin-bottom: 15px;
+    }
+
+    header .row1 .search-bar {
+        height: 25px;
+    }
+
+    header .row1 .search-bar form input {
+        width: 100%;
+    }
+
+    header .row1 .quota {
+        font-size: 1.5em;
+    }
+
+    header nav ul li{
+        margin: 0 1rem 0 1rem;
+        font-size: 0.8rem;
+    }
+}

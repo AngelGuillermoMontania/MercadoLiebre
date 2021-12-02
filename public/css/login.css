@@ -1,0 +1,41 @@
+.contein-login .login #title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10vh;
+}
+
+.contein-login .login form .user,
+.contein-login .login form .pass {
+    width: 90%;
+    height: 3rem;
+}
+
+.contein-login .login form .user input,
+.contein-login .login form .pass input {
+    width: 70%;
+}
+
+.contein-login .login form .contein-button button{
+    width: 85%;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    height: 2rem;
+}
+
+@media (min-width: 769px) {
+
+    .contein-login .login form .user,
+    .contein-login .login form .pass {
+    width: 60%;
+    }
+
+    .contein-login .login form .user input,
+    .contein-login .login form .pass input {
+        width: 60%;
+    }
+
+    .contein-login .login form .contein-button button{
+        width: 40%;
+    }
+
+}
